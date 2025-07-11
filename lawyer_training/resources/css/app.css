@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تنسيق المحتوى الرئيسي */
+.main-content {
+    margin-left: 250px; /* تعيين هامش للمحتوى الرئيسي لتجنب تغطية القائمة */
+    min-width: calc(100% - 250px); /* تحديد العرض الأدنى للمحتوى الرئيسي */
+}
+
+
+/* .bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 104 122);
+}
+.hover\:bg-gray-700:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 186 151) !important;
+} */
+
+
+

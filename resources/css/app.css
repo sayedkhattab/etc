@@ -1,0 +1,120 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Google Fonts - El Messiri */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #3490dc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #1c638e;
+    text-decoration: underline;
+}
+
+/* Custom Classes */
+.text-primary {
+    color: #3490dc !important;
+}
+
+.bg-primary {
+    background-color: #3490dc !important;
+}
+
+.btn-primary {
+    background-color: #3490dc;
+    border-color: #3490dc;
+}
+
+.btn-primary:hover {
+    background-color: #1c638e;
+    border-color: #1c638e;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus {
+    border-color: #3490dc;
+    box-shadow: 0 0 0 0.25rem rgba(52, 144, 220, 0.25);
+}
+
+/* RTL Specific */
+[dir="rtl"] .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
